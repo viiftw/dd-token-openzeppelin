@@ -13,7 +13,7 @@ App = {
       web3 = new Web3(web3.currentProvider);
     } else {
       // set the provider you want from Web3.providers
-      App.web3Provider = new Web3.providers.HttpProvider('http://127.0.0.1:9545');
+      App.web3Provider = new Web3.providers.HttpProvider('http://127.0.0.1:7545');
       web3 = new Web3(App.web3Provider);
     }
 
@@ -89,7 +89,7 @@ App = {
       }).then(function(result) {
         balance = result.c[0];
 
-        $('#TTBalance').text(balance);
+        $('#DDTBalance').text(balance);
       }).catch(function(err) {
         console.log(err.message);
       });
