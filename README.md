@@ -8,3 +8,5 @@ compile
 migrate
 # run
 npm run dev
+# 6/3/2019 fix Error: the tx doesn't have the correct nonce
+reset account mm
